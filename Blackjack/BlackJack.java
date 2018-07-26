@@ -5,7 +5,6 @@ public class BlackJack
 	public static void main(String[] args)
 	{
 		Scanner kb = new Scanner(System.in);
-		Random r = new Random();
 		System.out.println("***You get two cards. You may 'hit' to draw another card. Closest player to 21 without going over wins.***");
 		
 		String decision;
