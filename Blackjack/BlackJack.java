@@ -90,7 +90,7 @@ public class BlackJack
 		return newCard;
 	}
 	
-	public static void timeDelay(int t) //delay method for readability while playing. keeps try/catch blocks from making main() look super messy
+	public static void timeDelay(int t) //delay method for readability while playing. keeps try/catch from making main() look messy
 	{
 		try {
 			Thread.sleep(t);
