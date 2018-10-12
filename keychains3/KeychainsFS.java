@@ -15,7 +15,7 @@ public class KeychainsFS {
 		System.out.println("Welcome to the keychain shop!");
 		System.out.println("Each keychain is $10. Base shipping is $5 + $1 for each additional keychain.");
 			
-		while ( selection != 4 ) 	//loop until checkout
+		while ( selection != 4 ) //loop until checkout
 		{
 			System.out.println("\n1. Add Keychains to Order\n2. Remove Keyhains from Order\n3. View Current Order\n4. Checkout");
 		
@@ -23,10 +23,10 @@ public class KeychainsFS {
 			selection = getInput();
 		
 			switch (selection) {
-			case 1: chains = add_keychains(chains);		//base total keychains sent "add" method for calculation
+			case 1: chains = add_keychains(chains);	//base total keychains sent "add" method for calculation
 					System.out.println("You now have " + chains + " keychains.");
 				break;
-			case 2: chains = remove_keychains(chains);	//same with subtraction method
+			case 2: chains = remove_keychains(chains); //same with subtraction method
 					System.out.println("You now have " + chains + " keychains. ");
 				break;
 			case 3: view_order(price, chains, tax, shipping, quantityShip);
@@ -35,8 +35,8 @@ public class KeychainsFS {
 				break;
 			default: System.out.println("Invalid input. Please choose 1 - 4");
 				break; 		}
-			price = ( chains * 10 );					//calculate base price before loop restart
-		}		//end loop
+			price = ( chains * 10 ); //calculate base price before loop restart
+		} //end loop
 		
 	}
 	
