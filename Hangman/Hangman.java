@@ -15,7 +15,7 @@ public class Hangman {
 		int wrong = 0;
 		char guess;
 		
-		//loop until 5 wrong guesses
+		//loop until wrong 5 times
 		do {
 			System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
 			
@@ -45,8 +45,7 @@ public class Hangman {
 			//when word is guessed
 			if (Arrays.equals(word, blank) ) {
 				System.out.println("You got it!");
-				break;
-			}
+				break; }
 		}while(wrong<5);
 		
 		if (wrong == 5)
